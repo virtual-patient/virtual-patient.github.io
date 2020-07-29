@@ -255,6 +255,7 @@
           <!-- </ul>
               </section> -->
           <h5>Schema Definitions</h5>
+          <a href="#definition-pbAnswer"> pbAnswer </a>
           <a href="#definition-pbCommonExaminationRequest"> pbCommonExaminationRequest </a>
           <a href="#definition-pbCommonExaminationResponse"> pbCommonExaminationResponse </a>
           <a href="#definition-pbCommonExaminationsRequest"> pbCommonExaminationsRequest </a>
@@ -654,7 +655,10 @@
     {
       <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;answer&quot;</span>: {
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
       <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
       <span class="hljs-attr">&quot;tips&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
@@ -861,7 +865,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -1037,7 +1044,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -1160,7 +1170,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -1263,7 +1276,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -1321,7 +1337,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -1424,7 +1443,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -1482,7 +1504,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -1693,7 +1718,10 @@
     {
       <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;answer&quot;</span>: {
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
       <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
       <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -1901,7 +1929,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -2078,7 +2109,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -2202,7 +2236,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -2306,7 +2343,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -2365,7 +2405,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -2469,7 +2512,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -2528,7 +2574,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -2740,7 +2789,10 @@
     {
       <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;answer&quot;</span>: {
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
       <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
       <span class="hljs-attr">&quot;tips&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
@@ -2947,7 +2999,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -3123,7 +3178,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -3246,7 +3304,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -3349,7 +3410,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -3407,7 +3471,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -3510,7 +3577,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -3568,7 +3638,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -3784,7 +3857,10 @@
         {
           <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
           <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-          <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;answer&quot;</span>: {
+            <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
           <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
           <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
           <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -3796,7 +3872,10 @@
         {
           <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
           <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-          <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;answer&quot;</span>: {
+            <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
           <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
           <span class="hljs-attr">&quot;tips&quot;</span>: [
             <span class="hljs-string">&quot;string&quot;</span>
@@ -3807,7 +3886,10 @@
         {
           <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
           <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-          <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;answer&quot;</span>: {
+            <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
           <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
           <span class="hljs-attr">&quot;tips&quot;</span>: [
             <span class="hljs-string">&quot;string&quot;</span>
@@ -3820,7 +3902,10 @@
       <span class="hljs-attr">&quot;management&quot;</span>: [
         {
           <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-          <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;answer&quot;</span>: {
+            <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
           <span class="hljs-attr">&quot;tips&quot;</span>: [
             <span class="hljs-string">&quot;string&quot;</span>
           ]
@@ -4036,7 +4121,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -4048,7 +4136,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4059,7 +4150,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4072,7 +4166,10 @@
     <span class="hljs-attr">&quot;management&quot;</span>: [
       {
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ]
@@ -4257,7 +4354,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -4269,7 +4369,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4280,7 +4383,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4293,7 +4399,10 @@
     <span class="hljs-attr">&quot;management&quot;</span>: [
       {
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ]
@@ -4425,7 +4534,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -4437,7 +4549,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4448,7 +4563,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4461,7 +4579,10 @@
     <span class="hljs-attr">&quot;management&quot;</span>: [
       {
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ]
@@ -4573,7 +4694,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -4585,7 +4709,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4596,7 +4723,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4609,7 +4739,10 @@
     <span class="hljs-attr">&quot;management&quot;</span>: [
       {
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ]
@@ -4676,7 +4809,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -4688,7 +4824,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4699,7 +4838,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4712,7 +4854,10 @@
     <span class="hljs-attr">&quot;management&quot;</span>: [
       {
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ]
@@ -4824,7 +4969,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -4836,7 +4984,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4847,7 +4998,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4860,7 +5014,10 @@
     <span class="hljs-attr">&quot;management&quot;</span>: [
       {
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ]
@@ -4927,7 +5084,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -4939,7 +5099,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4950,7 +5113,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -4963,7 +5129,10 @@
     <span class="hljs-attr">&quot;management&quot;</span>: [
       {
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ]
@@ -7667,6 +7836,49 @@
             </div>
           </div>
           <h1>Schema Definitions</h1>
+          <div id="definition-pbAnswer" class="definition panel" data-traverse-target="definition-pbAnswer">
+            <h2 class="panel-title">
+              <a name="/definitions/pbAnswer"></a>pbAnswer: object
+              <!-- <span class="json-property-type"><span class="json-property-type">object</span>
+              <span class="json-property-range" title="Value limits"></span>
+              
+              
+              </span> -->
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="type">
+                      <span class="json-property-name">type:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="contents">
+                      <span class="json-property-name">contents:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
           <div id="definition-pbCommonExaminationRequest" class="definition panel" data-traverse-target="definition-pbCommonExaminationRequest">
             <h2 class="panel-title">
               <a name="/definitions/pbCommonExaminationRequest"></a>pbCommonExaminationRequest: object
@@ -7708,7 +7920,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -7757,7 +7972,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -7821,7 +8039,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -7888,7 +8109,10 @@
     {
       <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;answer&quot;</span>: {
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
       <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
       <span class="hljs-attr">&quot;tips&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
@@ -7954,7 +8178,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8022,7 +8249,10 @@
     {
       <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;answer&quot;</span>: {
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
       <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
       <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8080,7 +8310,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8130,7 +8363,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8232,7 +8468,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -8281,7 +8520,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -8345,7 +8587,10 @@
   <span class="hljs-attr">&quot;data&quot;</span>: {
     <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;answer&quot;</span>: {
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    },
     <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
@@ -8412,7 +8657,10 @@
     {
       <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;answer&quot;</span>: {
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
       <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
       <span class="hljs-attr">&quot;tips&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
@@ -8474,7 +8722,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8486,7 +8737,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -8497,7 +8751,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -8510,7 +8767,10 @@
     <span class="hljs-attr">&quot;management&quot;</span>: [
       {
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ]
@@ -8568,7 +8828,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8580,7 +8843,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -8591,7 +8857,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -8604,7 +8873,10 @@
     <span class="hljs-attr">&quot;management&quot;</span>: [
       {
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ]
@@ -8677,7 +8949,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8689,7 +8964,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -8700,7 +8978,10 @@
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
         <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
@@ -8713,7 +8994,10 @@
     <span class="hljs-attr">&quot;management&quot;</span>: [
       {
         <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-        <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+        },
         <span class="hljs-attr">&quot;tips&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ]
@@ -8789,7 +9073,10 @@
         {
           <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
           <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-          <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;answer&quot;</span>: {
+            <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
           <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
           <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
           <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8801,7 +9088,10 @@
         {
           <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
           <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-          <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;answer&quot;</span>: {
+            <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
           <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
           <span class="hljs-attr">&quot;tips&quot;</span>: [
             <span class="hljs-string">&quot;string&quot;</span>
@@ -8812,7 +9102,10 @@
         {
           <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
           <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-          <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;answer&quot;</span>: {
+            <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
           <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
           <span class="hljs-attr">&quot;tips&quot;</span>: [
             <span class="hljs-string">&quot;string&quot;</span>
@@ -8825,7 +9118,10 @@
       <span class="hljs-attr">&quot;management&quot;</span>: [
         {
           <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-          <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;answer&quot;</span>: {
+            <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+            <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+          },
           <span class="hljs-attr">&quot;tips&quot;</span>: [
             <span class="hljs-string">&quot;string&quot;</span>
           ]
@@ -9340,7 +9636,11 @@
                     </dt>
                     <dt data-property-name="answer">
                       <span class="json-property-name">answer:</span>
-                      <span class="json-property-type">string</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbAnswer">pbAnswer</a>
+                        </span>
+                      </span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
                     <dt data-property-name="isAnswer">
@@ -9373,7 +9673,10 @@
                   <body><pre><code class="hljs language-json">{
   <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;answer&quot;</span>: {
+    <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
   <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
   <span class="hljs-attr">&quot;tips&quot;</span>: [
     <span class="hljs-string">&quot;string&quot;</span>
@@ -9448,7 +9751,11 @@
                     </dt>
                     <dt data-property-name="answer">
                       <span class="json-property-name">answer:</span>
-                      <span class="json-property-type">string</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbAnswer">pbAnswer</a>
+                        </span>
+                      </span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
                     <dt data-property-name="type">
@@ -9486,7 +9793,10 @@
                   <body><pre><code class="hljs language-json">{
   <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;answer&quot;</span>: {
+    <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
   <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
   <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -9525,7 +9835,11 @@
                     </dt>
                     <dt data-property-name="answer">
                       <span class="json-property-name">answer:</span>
-                      <span class="json-property-type">string</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbAnswer">pbAnswer</a>
+                        </span>
+                      </span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
                     <dt data-property-name="isAnswer">
@@ -9558,7 +9872,10 @@
                   <body><pre><code class="hljs language-json">{
   <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;answer&quot;</span>: {
+    <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
   <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
   <span class="hljs-attr">&quot;tips&quot;</span>: [
     <span class="hljs-string">&quot;string&quot;</span>
@@ -9720,7 +10037,10 @@
     {
       <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;answer&quot;</span>: {
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
       <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
       <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -9732,7 +10052,10 @@
     {
       <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;answer&quot;</span>: {
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
       <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
       <span class="hljs-attr">&quot;tips&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
@@ -9743,7 +10066,10 @@
     {
       <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;answer&quot;</span>: {
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
       <span class="hljs-attr">&quot;isAnswer&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
       <span class="hljs-attr">&quot;tips&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
@@ -9756,7 +10082,10 @@
   <span class="hljs-attr">&quot;management&quot;</span>: [
     {
       <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;answer&quot;</span>: {
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      },
       <span class="hljs-attr">&quot;tips&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ]
@@ -9897,7 +10226,11 @@
                     </dt>
                     <dt data-property-name="answer">
                       <span class="json-property-name">answer:</span>
-                      <span class="json-property-type">string</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbAnswer">pbAnswer</a>
+                        </span>
+                      </span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
                     <dt data-property-name="tips">
@@ -9923,7 +10256,10 @@
                   <head></head>
                   <body><pre><code class="hljs language-json">{
   <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;answer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;answer&quot;</span>: {
+    <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  },
   <span class="hljs-attr">&quot;tips&quot;</span>: [
     <span class="hljs-string">&quot;string&quot;</span>
   ]
