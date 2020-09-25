@@ -37,6 +37,14 @@
           <!-- </ul>
               </section> -->
           <!-- <section>
+                <a href="#path--v1-client-investigations">/v1/client/investigations</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--v1-client-investigations-get"> Client Get Investigations </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
                 <a href="#path--v1-client-results--id-">/v1/client/results/{id}</a>
                 <ul> -->
           <!-- <li> -->
@@ -281,6 +289,14 @@
           <!-- </li> -->
           <!-- <li> -->
           <a href="#operation--v1-users-put"> Update Users </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <!-- <section>
+                <a href="#path--v1-users-passwordreset">/v1/users/passwordreset</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--v1-users-passwordreset-get"> Get Password Reset by Email </a>
           <!-- </li> -->
           <!-- </ul>
               </section> -->
@@ -777,6 +793,152 @@
               </div>
             </div>
           </div>
+          <span id="path--v1-client-investigations"></span>
+          <div id="operation--v1-client-investigations-get" class="operation panel" data-traverse-target="operation--v1-client-investigations-get">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-VPService">VPService</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-summary">Client Get Investigations</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">/v1/client/investigations</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">type:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <div class="prop-subtitle"> in query </div>
+                    </div>
+                    <div class="prop-value">
+                      <p class="no-description">(no description)</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">category:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <div class="prop-subtitle"> in query </div>
+                    </div>
+                    <div class="prop-value">
+                      <p class="no-description">(no description)</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbCommonInvestigationsResponse">pbCommonInvestigationsResponse</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>A successful response.</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">default </div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/runtimeError">runtimeError</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>An unexpected error response</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <span class="hljs-attr">&quot;data&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;test&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;answer&quot;</span>: {
+        <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;link&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      },
+      <span class="hljs-attr">&quot;tips&quot;</span>: [
+        <span class="hljs-string">&quot;string&quot;</span>
+      ]
+    }
+  ],
+  <span class="hljs-attr">&quot;total&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+                <section>
+                  <h5>Response Example
+                    <span>(default )</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <span class="hljs-attr">&quot;error&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;integer (int32)&quot;</span>,
+  <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;details&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;type_url&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;value&quot;</span>: <span class="hljs-string">&quot;string (byte)&quot;</span>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
           <span id="path--v1-client-results--id-"></span>
           <div id="operation--v1-client-results--id--post" class="operation panel" data-traverse-target="operation--v1-client-results--id--post">
             <!-- <section class="operation-tags row"> -->
@@ -1129,7 +1291,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -1188,7 +1351,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -4971,6 +5135,7 @@
           <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
         }
       ],
+      <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;examination&quot;</span>: [
         {
           <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -5027,7 +5192,8 @@
       ],
       <span class="hljs-attr">&quot;tips&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
-      ]
+      ],
+      <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
     }
   ],
   <span class="hljs-attr">&quot;total&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
@@ -5263,6 +5429,7 @@
         <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
       }
     ],
+    <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;examination&quot;</span>: [
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -5319,7 +5486,8 @@
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
-    ]
+    ],
+    <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -5524,6 +5692,7 @@
         <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
       }
     ],
+    <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;examination&quot;</span>: [
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -5580,7 +5749,8 @@
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
-    ]
+    ],
+    <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -5732,6 +5902,7 @@
         <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
       }
     ],
+    <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;examination&quot;</span>: [
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -5788,7 +5959,8 @@
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
-    ]
+    ],
+    <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -5920,6 +6092,7 @@
         <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
       }
     ],
+    <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;examination&quot;</span>: [
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -5976,7 +6149,8 @@
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
-    ]
+    ],
+    <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -6063,6 +6237,7 @@
         <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
       }
     ],
+    <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;examination&quot;</span>: [
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -6119,7 +6294,8 @@
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
-    ]
+    ],
+    <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -6251,6 +6427,7 @@
         <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
       }
     ],
+    <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;examination&quot;</span>: [
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -6307,7 +6484,8 @@
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
-    ]
+    ],
+    <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -6394,6 +6572,7 @@
         <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
       }
     ],
+    <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;examination&quot;</span>: [
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -6450,7 +6629,8 @@
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
-    ]
+    ],
+    <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -9165,7 +9345,8 @@
       <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
       <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
     }
   ],
   <span class="hljs-attr">&quot;total&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
@@ -9373,7 +9554,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -9427,6 +9609,121 @@
   <span class="hljs-attr">&quot;data&quot;</span>: [
     <span class="hljs-string">&quot;string&quot;</span>
   ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+                <section>
+                  <h5>Response Example
+                    <span>(default )</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <span class="hljs-attr">&quot;error&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;integer (int32)&quot;</span>,
+  <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;details&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;type_url&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;value&quot;</span>: <span class="hljs-string">&quot;string (byte)&quot;</span>
+    }
+  ]
+}
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <span id="path--v1-users-passwordreset"></span>
+          <div id="operation--v1-users-passwordreset-get" class="operation panel" data-traverse-target="operation--v1-users-passwordreset-get">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-VPService">VPService</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-summary">Get Password Reset by Email</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">/v1/users/passwordreset</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">email:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <div class="prop-subtitle"> in query </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>user email.</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbGetPasswordResetResponse">pbGetPasswordResetResponse</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>A successful response.</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">default </div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/runtimeError">runtimeError</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>An unexpected error response</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">{
+  <span class="hljs-attr">&quot;message&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
 }
 </code></pre> </body>
                   </html>
@@ -9690,7 +9987,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -9814,7 +10112,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -9918,7 +10217,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -9977,7 +10277,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -10081,7 +10382,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -10140,7 +10442,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -12678,6 +12981,7 @@
         <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
       }
     ],
+    <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;examination&quot;</span>: [
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -12734,7 +13038,8 @@
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
-    ]
+    ],
+    <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -12812,6 +13117,7 @@
         <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
       }
     ],
+    <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;examination&quot;</span>: [
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -12868,7 +13174,8 @@
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
-    ]
+    ],
+    <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -12961,6 +13268,7 @@
         <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
       }
     ],
+    <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;examination&quot;</span>: [
       {
         <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -13017,7 +13325,8 @@
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
-    ]
+    ],
+    <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -13113,6 +13422,7 @@
           <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
         }
       ],
+      <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;examination&quot;</span>: [
         {
           <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -13169,7 +13479,8 @@
       ],
       <span class="hljs-attr">&quot;tips&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
-      ]
+      ],
+      <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
     }
   ],
   <span class="hljs-attr">&quot;total&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
@@ -13745,7 +14056,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -13795,7 +14107,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -13860,7 +14173,8 @@
     <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
     <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
     <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+    <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
   }
 }
 </code></pre> </body>
@@ -13928,7 +14242,8 @@
       <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
       <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
       <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-      <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+      <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+      <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
     }
   ],
   <span class="hljs-attr">&quot;total&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
@@ -15145,6 +15460,11 @@
                         <div class="json-inner-schema"> </div>
                       </section>
                     </dt>
+                    <dt data-property-name="historySummary">
+                      <span class="json-property-name">historySummary:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
                     <dt data-property-name="examination">
                       <span class="json-property-name">examination:</span>
                       <span class="json-property-type">
@@ -15229,6 +15549,11 @@
                         <div class="json-inner-schema"> </div>
                       </section>
                     </dt>
+                    <dt data-property-name="summary">
+                      <span class="json-property-name">summary:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
                   </dl>
                 </section>
               </div>
@@ -15274,6 +15599,7 @@
       <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
     }
   ],
+  <span class="hljs-attr">&quot;historySummary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-attr">&quot;examination&quot;</span>: [
     {
       <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
@@ -15330,7 +15656,8 @@
   ],
   <span class="hljs-attr">&quot;tips&quot;</span>: [
     <span class="hljs-string">&quot;string&quot;</span>
-  ]
+  ],
+  <span class="hljs-attr">&quot;summary&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
 }
 </code></pre> </body>
                   </html>
@@ -16018,6 +16345,11 @@
                       <span class="json-property-type">string</span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
+                    <dt data-property-name="stage">
+                      <span class="json-property-name">stage:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
                   </dl>
                 </section>
               </div>
@@ -16035,7 +16367,8 @@
   <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
   <span class="hljs-attr">&quot;verified&quot;</span>: <span class="hljs-string">&quot;boolean (boolean)&quot;</span>,
   <span class="hljs-attr">&quot;password&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
-  <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  <span class="hljs-attr">&quot;matricNumber&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;stage&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
 }
 </code></pre> </body>
                   </html>
