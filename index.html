@@ -664,7 +664,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;total&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
@@ -1296,7 +1303,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;total&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
@@ -1464,7 +1478,108 @@
                   <html>
                   <head></head>
                   <body><pre><code class="hljs language-json">{
-  <span class="hljs-attr">&quot;history&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+  <span class="hljs-attr">&quot;history&quot;</span>: {
+    <span class="hljs-attr">&quot;selectedAndCorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;link&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        },
+        <span class="hljs-attr">&quot;tips&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;jargons&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;defaultAnswer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;selectedAndIncorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;link&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        },
+        <span class="hljs-attr">&quot;tips&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;jargons&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;defaultAnswer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;missed&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;link&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        },
+        <span class="hljs-attr">&quot;tips&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;jargons&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;defaultAnswer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>
+  },
   <span class="hljs-attr">&quot;examination&quot;</span>: {
     <span class="hljs-attr">&quot;selectedAndCorrect&quot;</span>: [
       {
@@ -1594,8 +1709,120 @@
     ],
     <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>
   },
-  <span class="hljs-attr">&quot;diagnosis&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
-  <span class="hljs-attr">&quot;management&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+  <span class="hljs-attr">&quot;diagnosis&quot;</span>: {
+    <span class="hljs-attr">&quot;selectedAndCorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;selectedAndIncorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;missed&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>
+  },
+  <span class="hljs-attr">&quot;management&quot;</span>: {
+    <span class="hljs-attr">&quot;selectedAndCorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;selectedAndIncorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;missed&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>
+  },
   <span class="hljs-attr">&quot;totalScores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>,
   <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>,
   <span class="hljs-attr">&quot;percentageScore&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>,
@@ -2307,7 +2534,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;total&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
@@ -2514,7 +2748,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -2690,7 +2931,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -2813,7 +3061,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -2916,7 +3171,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -2974,7 +3236,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -3077,7 +3346,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -3135,7 +3411,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -6942,7 +7225,14 @@
           <span class="hljs-attr">&quot;keywords&quot;</span>: [
             <span class="hljs-string">&quot;string&quot;</span>
           ],
-          <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+          <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+          <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;keyword&quot;</span>: [
+                <span class="hljs-string">&quot;string&quot;</span>
+              ]
+            }
+          ]
         }
       ],
       <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -6953,7 +7243,14 @@
           <span class="hljs-attr">&quot;keywords&quot;</span>: [
             <span class="hljs-string">&quot;string&quot;</span>
           ],
-          <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+          <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+          <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;keyword&quot;</span>: [
+                <span class="hljs-string">&quot;string&quot;</span>
+              ]
+            }
+          ]
         }
       ],
       <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -7273,7 +7570,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -7284,7 +7588,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -7573,7 +7884,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -7584,7 +7902,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -7820,7 +8145,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -7831,7 +8163,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8047,7 +8386,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -8058,7 +8404,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8229,7 +8582,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -8240,7 +8600,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8456,7 +8823,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -8467,7 +8841,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -8638,7 +9019,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -8649,7 +9037,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -9117,7 +9512,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;total&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
@@ -9324,7 +9726,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -9500,7 +9909,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -9623,7 +10039,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -9726,7 +10149,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -9784,7 +10214,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -9887,7 +10324,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -9945,7 +10389,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -14812,7 +15263,11 @@
                   <dl>
                     <dt data-property-name="history">
                       <span class="json-property-name">history:</span>
-                      <span class="json-property-type">object</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbHistoryResult">pbHistoryResult</a>
+                        </span>
+                      </span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
                     <dt data-property-name="examination">
@@ -14835,12 +15290,20 @@
                     </dt>
                     <dt data-property-name="diagnosis">
                       <span class="json-property-name">diagnosis:</span>
-                      <span class="json-property-type">object</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbDiagnosisResult">pbDiagnosisResult</a>
+                        </span>
+                      </span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
                     <dt data-property-name="management">
                       <span class="json-property-name">management:</span>
-                      <span class="json-property-type">object</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/pbManagementResult">pbManagementResult</a>
+                        </span>
+                      </span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
                     <dt data-property-name="totalScores">
@@ -14877,7 +15340,108 @@
                   <html>
                   <head></head>
                   <body><pre><code class="hljs language-json">{
-  <span class="hljs-attr">&quot;history&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+  <span class="hljs-attr">&quot;history&quot;</span>: {
+    <span class="hljs-attr">&quot;selectedAndCorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;link&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        },
+        <span class="hljs-attr">&quot;tips&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;jargons&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;defaultAnswer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;selectedAndIncorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;link&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        },
+        <span class="hljs-attr">&quot;tips&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;jargons&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;defaultAnswer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;missed&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;category&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;question&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;answer&quot;</span>: {
+          <span class="hljs-attr">&quot;contents&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+          <span class="hljs-attr">&quot;link&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        },
+        <span class="hljs-attr">&quot;tips&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;jargons&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;stat&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;defaultAnswer&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>
+  },
   <span class="hljs-attr">&quot;examination&quot;</span>: {
     <span class="hljs-attr">&quot;selectedAndCorrect&quot;</span>: [
       {
@@ -15007,8 +15571,120 @@
     ],
     <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>
   },
-  <span class="hljs-attr">&quot;diagnosis&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
-  <span class="hljs-attr">&quot;management&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+  <span class="hljs-attr">&quot;diagnosis&quot;</span>: {
+    <span class="hljs-attr">&quot;selectedAndCorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;selectedAndIncorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;missed&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>
+  },
+  <span class="hljs-attr">&quot;management&quot;</span>: {
+    <span class="hljs-attr">&quot;selectedAndCorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;selectedAndIncorrect&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;missed&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;id&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;item&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+        <span class="hljs-attr">&quot;keywords&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ],
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
+      }
+    ],
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>
+  },
   <span class="hljs-attr">&quot;totalScores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>,
   <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>,
   <span class="hljs-attr">&quot;percentageScore&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>,
@@ -15228,7 +15904,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -15295,7 +15978,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;total&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
@@ -15352,7 +16042,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -15401,7 +16098,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -16472,7 +17176,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -16483,7 +17194,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -16645,7 +17363,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -16656,7 +17381,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -16833,7 +17565,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -16844,7 +17583,14 @@
         <span class="hljs-attr">&quot;keywords&quot;</span>: [
           <span class="hljs-string">&quot;string&quot;</span>
         ],
-        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+        <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+        <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;keyword&quot;</span>: [
+              <span class="hljs-string">&quot;string&quot;</span>
+            ]
+          }
+        ]
       }
     ],
     <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -17024,7 +17770,14 @@
           <span class="hljs-attr">&quot;keywords&quot;</span>: [
             <span class="hljs-string">&quot;string&quot;</span>
           ],
-          <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+          <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+          <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;keyword&quot;</span>: [
+                <span class="hljs-string">&quot;string&quot;</span>
+              ]
+            }
+          ]
         }
       ],
       <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -17035,7 +17788,14 @@
           <span class="hljs-attr">&quot;keywords&quot;</span>: [
             <span class="hljs-string">&quot;string&quot;</span>
           ],
-          <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+          <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+          <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;keyword&quot;</span>: [
+                <span class="hljs-string">&quot;string&quot;</span>
+              ]
+            }
+          ]
         }
       ],
       <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -17110,7 +17870,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -17159,7 +17926,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -17223,7 +17997,14 @@
     <span class="hljs-attr">&quot;keywords&quot;</span>: [
       <span class="hljs-string">&quot;string&quot;</span>
     ],
-    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+    <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+    <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;keyword&quot;</span>: [
+          <span class="hljs-string">&quot;string&quot;</span>
+        ]
+      }
+    ]
   }
 }
 </code></pre> </body>
@@ -17290,7 +18071,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;total&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
@@ -18292,6 +19080,26 @@
                       <span class="json-property-format">(int64)</span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
+                    <dt data-property-name="strictKeywords">
+                      <span class="json-property-name">strictKeywords:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/pbStrictKeywords">pbStrictKeywords</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">
+                          <span class="">
+                            <a class="json-schema-ref" href="#/definitions/pbStrictKeywords">pbStrictKeywords</a>
+                          </span>
+                        </span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema"> </div>
+                      </section>
+                    </dt>
                   </dl>
                 </section>
               </div>
@@ -18308,7 +19116,14 @@
   <span class="hljs-attr">&quot;keywords&quot;</span>: [
     <span class="hljs-string">&quot;string&quot;</span>
   ],
-  <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+  <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+  <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;keyword&quot;</span>: [
+        <span class="hljs-string">&quot;string&quot;</span>
+      ]
+    }
+  ]
 }
 </code></pre> </body>
                   </html>
@@ -18414,7 +19229,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;selectedAndIncorrect&quot;</span>: [
@@ -18425,7 +19247,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;missed&quot;</span>: [
@@ -18436,7 +19265,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>
@@ -19721,7 +20557,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;management&quot;</span>: [
@@ -19732,7 +20575,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;tips&quot;</span>: [
@@ -19969,6 +20819,26 @@
                       <span class="json-property-format">(int64)</span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
+                    <dt data-property-name="strictKeywords">
+                      <span class="json-property-name">strictKeywords:</span>
+                      <span class="json-property-type">
+                        <span class="json-schema-ref-array">
+                          <a class="json-schema-ref" href="#/definitions/pbStrictKeywords">pbStrictKeywords</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt class="json-inner-schema">
+                      <section class="json-schema-array-items">
+                        <span class="json-property-type">
+                          <span class="">
+                            <a class="json-schema-ref" href="#/definitions/pbStrictKeywords">pbStrictKeywords</a>
+                          </span>
+                        </span>
+                        <span class="json-property-range" title="Value limits"></span>
+                        <div class="json-inner-schema"> </div>
+                      </section>
+                    </dt>
                   </dl>
                 </section>
               </div>
@@ -19985,7 +20855,14 @@
   <span class="hljs-attr">&quot;keywords&quot;</span>: [
     <span class="hljs-string">&quot;string&quot;</span>
   ],
-  <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+  <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+  <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;keyword&quot;</span>: [
+        <span class="hljs-string">&quot;string&quot;</span>
+      ]
+    }
+  ]
 }
 </code></pre> </body>
                   </html>
@@ -20091,7 +20968,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;selectedAndIncorrect&quot;</span>: [
@@ -20102,7 +20986,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;missed&quot;</span>: [
@@ -20113,7 +21004,14 @@
       <span class="hljs-attr">&quot;keywords&quot;</span>: [
         <span class="hljs-string">&quot;string&quot;</span>
       ],
-      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>
+      <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;string (int64)&quot;</span>,
+      <span class="hljs-attr">&quot;strictKeywords&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;keyword&quot;</span>: [
+            <span class="hljs-string">&quot;string&quot;</span>
+          ]
+        }
+      ]
     }
   ],
   <span class="hljs-attr">&quot;scores&quot;</span>: <span class="hljs-string">&quot;number (double)&quot;</span>
